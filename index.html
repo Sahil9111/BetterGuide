@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <!-- import function (components folder ke andar wale ko he import krega)-->
+    <script>
+        $(function () {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = 'components/' + $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        })
+    </script>
+    <link rel="stylesheet" href="/src/style/style.css">
+    <title>BetterGuide-Home</title>
+    <link rel="icon" type="image/x-icon" href="/public/logo.svg">
+</head>
+
+<body>
+    <!-- navbar component -->
+    <div data-include="Navbar"></div>
+
+    <!-- title -->
+    <div class="d-flex justify-content-center my-5 text-primary fw-bold fs-1">HOME</div>
+
+    <!-- container -->
+    <div class="container d-flex justify-content-center flex-wrap">
+        <!-- cards -->
+        <a href="/src/pages/html5.html" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/html5-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">HTML5</p>
+                </div>
+            </div>
+        </a>
+        <a href="/src/pages/css3.html" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/css-3-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">CSS3</p>
+                </div>
+            </div>
+        </a>
+        <a href="" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/github-color-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">GITHUB</p>
+                </div>
+            </div>
+        </a>
+        <a href="" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/bootstrap-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">BOOTSTRAP5</p>
+                </div>
+            </div>
+        </a>
+        <a href="" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/js-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">JS</p>
+                </div>
+            </div>
+        </a>
+        <a href="" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/nextjs-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">NEXT JS</p>
+                </div>
+            </div>
+        </a>
+        <a href="" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/npm-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">NPM</p>
+                </div>
+            </div>
+        </a>
+        <a href="/src/pages/strapi.html" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/strapi-icon-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">STRAPI</p>
+                </div>
+            </div>
+        </a>
+        <a href="" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem; padding-top: 95px;">
+                <img src="/public/icons/svg-repo-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2" style="margin-top: 100px;">SVGREPO</p>
+                </div>
+            </div>
+        </a>
+        <a href="" class="pointer">
+            <div class="card mx-5 my-5 shadow" style="width: 18rem;">
+                <img src="/public/icons/jquery-logo-svgrepo-com.svg" class="card-img-top" alt="img">
+                <div class="card-body d-flex justify-content-center">
+                    <p class="card-text fs-2">JQUERY</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+
+
+</html>
