@@ -31,9 +31,9 @@
             })
         })
     </script>
-    <!-- <link rel="stylesheet" href="/src/style/style.css"> -->
+    <link rel="stylesheet" href="/src/style/style.css">
     <title>BetterGuide-css3</title>
-    <link rel="icon" type="image/x-icon" href="./public/logo.svg">
+    <link rel="icon" type="image/x-icon" href="/public/logo.svg">
 </head>
 
 <body>
@@ -49,7 +49,7 @@
         <div class="accordion" id="accordionExample1">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         How to make NavBar Component like reactjs
                     </button>
@@ -60,27 +60,26 @@
                         <p class="text-success"> <br>
                             &lt!--import jquery cdn "HEAD ME" --></p><br>
 
-                        <strong class="text-primary"> &ltscript src="https://code.jquery.com/jquery-3.6.3.js"
+                        <strong class="text-primary pointer"> &ltscript src="https://code.jquery.com/jquery-3.6.3.js"
                             integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
                             crossorigin="anonymous"><br>
                             &lt/script></strong><br>
                         <p class="text-success"> &lt!-- import function (components folder ke andar wale ko he import
                             krega) "HEAD ME"--></p><br>
-                        <strong class="text-primary">&ltscript><br>
-                            &nbsp &nbsp$(function () {<br>
-                            &nbsp &nbsp &nbsp &nbsp var includes = $('[data-include]')<br>
-                            &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp$.each(includes, function () {<br>
-                            &nbsp &nbsp&nbsp &nbsp&nbsp &nbspvar file = '../../components/' + $(this).data('include') +
-                            '.html'<br>
-                            &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp$(this).load(file)<br>
-                            &nbsp &nbsp&nbsp &nbsp})<br>
-                            &nbsp &nbsp})<br>
+                        <strong class="text-primary">&ltscript>
+                            $(function () {
+                                var includes = $('[data-include]')
+                                 $.each(includes, function () {
+                                 var file = '../../components/' + $(this).data('include') + '.html'
+                                 $(this).load(file)
+                              })
+                           })
                             &lt/script></strong>
                         <br>
                         <p class="text-success">&lt!--import NavBar Component "BODY ME" --></p><br>
                         <strong class="text-primary"> &ltbody><br>
-                            &nbsp &nbsp&lt!-- navbar component --><br>
-                            &nbsp &nbsp&ltdiv data-include="Navbar">&lt/div><br>
+                            &lt!-- navbar component --><br>
+                            &ltdiv data-include="Navbar">&lt/div><br>
                             &lt/body></strong><br>
                     </div>
                 </div>
